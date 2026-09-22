@@ -14,6 +14,9 @@ Bu proje, ziyaretçilerle yapay zekâ üzerinden etkileşim kuran ve onların il
 ## Hedef Mimari (Dosya Düzeni)
 
 
+<img width="642" height="355" alt="{899562EC-884F-4D67-A29C-97F70AAA1216}" src="https://github.com/user-attachments/assets/0a6eec1b-f3a3-4583-9848-dae35732dccd" />
+
+
 Smartlead_ai/
 ├── run.py                  # Sunucuyu başlatan giriş noktası
 ├── config.py               # Ortam ve uygulama ayarları
