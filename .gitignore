@@ -1,0 +1,16 @@
+#Sanal ortam klasoru
+
+venv/
+env/
+.venv/
+
+# Python onbellek dosyalari
+__pycache__/
+*.pyc
+
+#Gizli bilgiler
+.env
+
+#Editor Ayarlari
+.vscode/
+.idea/
