@@ -39,13 +39,8 @@ def create_app(config_name: str = None) -> Flask:
     app.config.from_object(selected_config)
 
     # ── 3. CORS'u Etkinleştir ────────────────────────────────────────────────
-    # Wix frontend'in farklı bir domain'den istek atabilmesi için zorunlu!
-    CORS(
-        app,
-        origins=["https://stastegy.wixstudio.com"],  # Sadece ana Wix domainine izin veriyoruz
-        methods=["GET", "POST", "OPTIONS"],
-        allow_headers=["Content-Type", "Authorization"],
-    )
+    # Wix frontend'in sorunsuz istek atabilmesi için tüm domainlere izin veriyoruz
+    CORS(app)
 
     # ── 4. Veritabanını Başlat ───────────────────────────────────────────────
     # Uygulama bağlamı (app context) içinde çalışması gerekiyor
