@@ -42,7 +42,7 @@ def create_app(config_name: str = None) -> Flask:
     # Wix frontend'in farklı bir domain'den istek atabilmesi için zorunlu!
     CORS(
         app,
-        origins=app.config["CORS_ORIGINS"],
+        origins=["https://stastegy.wixstudio.com"],  # Sadece ana Wix domainine izin veriyoruz
         methods=["GET", "POST", "OPTIONS"],
         allow_headers=["Content-Type", "Authorization"],
     )
